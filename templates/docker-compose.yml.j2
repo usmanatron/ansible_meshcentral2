@@ -1,0 +1,15 @@
+# {{ ansible_managed }}
+version: "3.7"
+
+services:
+  app:
+    image: "technoexpress/meshcentral2:{{ meshcentral2_digest }}"
+    ports:
+      - 8080:80
+      - 8443:443
+    restart: always
+    environment:
+      - DB=netdb
+    volumes:
+      - "{{ app_folder }}/data:/home/meshserver/meshcentral-data"
+      - "{{ app_folder }}/files:/home/meshserver/meshcentral-files"

@@ -1,0 +1,18 @@
+{
+  "settings": {
+      "Port": 80,
+      "MpsPort": 4443,
+      "ExactPorts": true,
+      "TLSOffload": true,
+      "Wanonly": true,
+      "WebRTC": true,
+      "DbEncryptKey": "{{ meshcentral2_encryption_key }}"
+  },
+  "smtp": {
+      "host": "{{ meshcentral2_smtp_host }}",
+      "port": {{ meshcentral2_smtp_port }},
+      "from": " {{ meshcentral2_smtp_from }}",
+      "user": " {{ meshcentral2_smtp_username }}",
+      "pass": " {{ meshcentral2_smtp_password }}"
+  }
+}
