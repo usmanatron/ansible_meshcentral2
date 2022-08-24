@@ -1,7 +1,7 @@
 ---
 # Tags are not available fro this container - use SHA digests instead
 meshcentral2_digest: ""
-meshcentral2_encryption_key: "{{ vault_app_meshcentral2_encryption_key }}"
+meshcentral2_encryption_key: ""
 
 # SMTP
 meshcentral2_smtp_host: ""
